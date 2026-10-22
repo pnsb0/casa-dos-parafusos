@@ -1,4 +1,4 @@
-/* Casa dos Parafusos — artigo. Paleta "aço + amarelo de obra". */
+/* Casa dos Parafusos — artigo. Paleta "aço + laranja". */
 :root {
   --aco: #1f2429;
   --aco-2: #2c333a;
@@ -6,7 +6,8 @@
   --papel: #f6f3ee;
   --linha: #ddd6cb;
   --amarelo: #f2b705;
-  --amarelo-escuro: #c99600;
+  --laranja: #f26a1b;
+  --laranja-escuro: #c2410c;
   --texto: #22262a;
   --whats: #1fa855;
 }
@@ -30,12 +31,12 @@ a { color: inherit; }
   padding: 12px 20px;
   background: var(--aco);
   color: #fff;
-  border-bottom: 3px solid var(--amarelo);
+  border-bottom: 3px solid var(--laranja);
 }
 .marca { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .marca span { font: 800 1.25rem/1 "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: .04em; }
 .marca-icone { width: 30px; height: 30px; }
-.marca-icone polygon { fill: var(--amarelo); }
+.marca-icone polygon { fill: var(--amarelo); } /* porca fica amarela */
 .marca-icone circle { fill: var(--aco); }
 .topo-whats {
   font-size: .85rem; font-weight: 600; text-decoration: none;
@@ -59,7 +60,7 @@ a { color: inherit; }
 .chapeu {
   display: inline-block; margin: 0 0 18px;
   font: 700 .85rem/1 "Barlow Condensed", sans-serif; letter-spacing: .14em; text-transform: uppercase;
-  color: var(--aco); background: var(--amarelo); padding: 6px 10px;
+  color: var(--aco); background: var(--laranja); padding: 6px 10px;
 }
 .capa h1 {
   margin: 0 0 18px;
@@ -67,7 +68,7 @@ a { color: inherit; }
   text-transform: uppercase; letter-spacing: .01em;
 }
 .linha-fina { margin: 0 0 22px; font: 400 1.2rem/1.5 "Lora", serif; color: #d9dde1; max-width: 640px; }
-.meta { margin: 0; font-size: .85rem; color: var(--amarelo); font-weight: 500; }
+.meta { margin: 0; font-size: .85rem; color: var(--laranja); font-weight: 500; }
 
 /* ---------- Artigo ---------- */
 .artigo { max-width: 680px; margin: 0 auto; padding: 56px 20px 40px; }
@@ -75,7 +76,7 @@ a { color: inherit; }
 .artigo .abertura { font-size: 1.25rem; }
 .artigo .abertura::first-letter {
   float: left; font: 800 4.2rem/.85 "Barlow Condensed", sans-serif;
-  color: var(--amarelo-escuro); padding: 6px 10px 0 0;
+  color: var(--laranja-escuro); padding: 6px 10px 0 0;
 }
 .artigo h2 {
   margin: 2.2em 0 .7em;
@@ -83,7 +84,7 @@ a { color: inherit; }
   text-transform: uppercase; color: var(--aco);
 }
 .artigo h2::before {
-  content: ""; display: block; width: 48px; height: 5px; background: var(--amarelo); margin-bottom: 14px;
+  content: ""; display: block; width: 48px; height: 5px; background: var(--laranja); margin-bottom: 14px;
 }
 
 /* Linha do tempo */
@@ -98,16 +99,16 @@ a { color: inherit; }
   width: 14px; height: 14px; border-radius: 50%; background: var(--papel); border: 3px solid var(--cinza);
 }
 .linha-tempo strong { display: block; font: 800 1.5rem/1 "Barlow Condensed", sans-serif; color: var(--aco); margin-bottom: 4px; }
-.linha-tempo .destaque::before { background: var(--amarelo); border-color: var(--amarelo-escuro); }
-.linha-tempo .destaque strong { color: var(--amarelo-escuro); }
+.linha-tempo .destaque::before { background: var(--laranja); border-color: var(--laranja-escuro); }
+.linha-tempo .destaque strong { color: var(--laranja-escuro); }
 
 /* Citação */
 .citacao {
   margin: 2.2em 0; padding: 26px 26px 22px;
-  background: var(--aco); color: #fff; border-left: 6px solid var(--amarelo);
+  background: var(--aco); color: #fff; border-left: 6px solid var(--laranja);
 }
 .citacao p { font: italic 400 1.3rem/1.55 "Lora", serif !important; margin: 0 0 12px !important; }
-.citacao cite { font: 700 .85rem/1 "Barlow Condensed", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--amarelo); font-style: normal; }
+.citacao cite { font: 700 .85rem/1 "Barlow Condensed", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--laranja); font-style: normal; }
 
 /* ---------- Visite ---------- */
 .visite {
@@ -116,7 +117,7 @@ a { color: inherit; }
 }
 .visite-texto {
   background: #fff; border: 1px solid var(--linha); padding: 28px;
-  border-top: 5px solid var(--amarelo);
+  border-top: 5px solid var(--laranja);
 }
 .visite h2 { margin: 0 0 12px; font: 800 2.2rem/1 "Barlow Condensed", sans-serif; text-transform: uppercase; color: var(--aco); }
 .visite p { margin: 0 0 10px; }
