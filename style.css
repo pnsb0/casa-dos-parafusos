@@ -1,13 +1,12 @@
-/* Casa dos Parafusos — artigo. Paleta "aço + laranja". */
+/* Casa dos Parafusos — artigo. Paleta "aço + laranja" (a fachada da loja é laranja). */
 :root {
   --aco: #1f2429;
   --aco-2: #2c333a;
   --cinza: #5b646d;
   --papel: #f6f3ee;
   --linha: #ddd6cb;
-  --amarelo: #f2b705;
-  --laranja: #f26a1b;
-  --laranja-escuro: #c2410c;
+  --laranja: #ff8a1f;
+  --laranja-escuro: #d9630b;
   --texto: #22262a;
   --whats: #1fa855;
 }
@@ -23,6 +22,7 @@ body {
 }
 img, iframe { max-width: 100%; display: block; }
 a { color: inherit; }
+::selection { background: var(--laranja); color: var(--aco); }
 
 /* ---------- Topo ---------- */
 .topo {
@@ -36,7 +36,7 @@ a { color: inherit; }
 .marca { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .marca span { font: 800 1.25rem/1 "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: .04em; }
 .marca-icone { width: 30px; height: 30px; }
-.marca-icone polygon { fill: var(--amarelo); } /* porca fica amarela */
+.marca-icone polygon { fill: var(--laranja); }
 .marca-icone circle { fill: var(--aco); }
 .topo-whats {
   font-size: .85rem; font-weight: 600; text-decoration: none;
@@ -46,13 +46,13 @@ a { color: inherit; }
 /* ---------- Capa ---------- */
 .capa {
   position: relative; overflow: hidden;
-  background: linear-gradient(160deg, var(--aco) 0%, var(--aco-2) 100%);
-  color: #fff;
+  background: var(--laranja);
+  color: var(--aco);
   padding: 72px 20px 64px;
 }
 .capa-padrao {
-  position: absolute; inset: 0; opacity: .09;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='64' viewBox='0 0 56 64'%3E%3Cpolygon points='28,4 50,17 50,43 28,56 6,43 6,17' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Ccircle cx='28' cy='30' r='8' fill='none' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E");
+  position: absolute; inset: 0; opacity: .13;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='64' viewBox='0 0 56 64'%3E%3Cpolygon points='28,4 50,17 50,43 28,56 6,43 6,17' fill='none' stroke='%231f2429' stroke-width='2'/%3E%3Ccircle cx='28' cy='30' r='8' fill='none' stroke='%231f2429' stroke-width='2'/%3E%3C/svg%3E");
   -webkit-mask-image: linear-gradient(to left, #000 20%, transparent 85%);
           mask-image: linear-gradient(to left, #000 20%, transparent 85%);
 }
@@ -60,15 +60,15 @@ a { color: inherit; }
 .chapeu {
   display: inline-block; margin: 0 0 18px;
   font: 700 .85rem/1 "Barlow Condensed", sans-serif; letter-spacing: .14em; text-transform: uppercase;
-  color: var(--aco); background: var(--laranja); padding: 6px 10px;
+  color: #fff; background: var(--aco); padding: 6px 10px;
 }
 .capa h1 {
   margin: 0 0 18px;
   font: 800 clamp(2.1rem, 6vw, 3.6rem)/1.02 "Barlow Condensed", sans-serif;
   text-transform: uppercase; letter-spacing: .01em;
 }
-.linha-fina { margin: 0 0 22px; font: 400 1.2rem/1.5 "Lora", serif; color: #d9dde1; max-width: 640px; }
-.meta { margin: 0; font-size: .85rem; color: var(--laranja); font-weight: 500; }
+.linha-fina { margin: 0 0 22px; font: 400 1.2rem/1.5 "Lora", serif; color: #2f2a26; max-width: 640px; }
+.meta { margin: 0; font-size: .85rem; color: var(--aco); font-weight: 600; }
 
 /* ---------- Artigo ---------- */
 .artigo { max-width: 680px; margin: 0 auto; padding: 56px 20px 40px; }
@@ -84,19 +84,19 @@ a { color: inherit; }
   text-transform: uppercase; color: var(--aco);
 }
 .artigo h2::before {
-  content: ""; display: block; width: 48px; height: 5px; background: var(--laranja); margin-bottom: 14px;
+  content: ""; display: block; width: 64px; height: 6px; background: var(--laranja); margin-bottom: 14px;
 }
 
 /* Linha do tempo */
 .linha-tempo {
   list-style: none; margin: 2.4em 0; padding: 22px 0 0;
   display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;
-  border-top: 2px solid var(--linha); counter-reset: none;
+  border-top: 3px solid var(--laranja); counter-reset: none;
 }
 .linha-tempo li { position: relative; padding-top: 14px; font-size: .85rem; line-height: 1.35; color: var(--cinza); }
 .linha-tempo li::before {
   content: ""; position: absolute; top: -31px; left: 0;
-  width: 14px; height: 14px; border-radius: 50%; background: var(--papel); border: 3px solid var(--cinza);
+  width: 14px; height: 14px; border-radius: 50%; background: var(--papel); border: 3px solid var(--laranja);
 }
 .linha-tempo strong { display: block; font: 800 1.5rem/1 "Barlow Condensed", sans-serif; color: var(--aco); margin-bottom: 4px; }
 .linha-tempo .destaque::before { background: var(--laranja); border-color: var(--laranja-escuro); }
@@ -116,10 +116,10 @@ a { color: inherit; }
   display: grid; grid-template-columns: 1fr 1.2fr; gap: 28px; align-items: stretch;
 }
 .visite-texto {
-  background: #fff; border: 1px solid var(--linha); padding: 28px;
-  border-top: 5px solid var(--laranja);
+  background: var(--aco); color: #fff; padding: 28px;
+  border-top: 6px solid var(--laranja);
 }
-.visite h2 { margin: 0 0 12px; font: 800 2.2rem/1 "Barlow Condensed", sans-serif; text-transform: uppercase; color: var(--aco); }
+.visite h2 { margin: 0 0 12px; font: 800 2.2rem/1 "Barlow Condensed", sans-serif; text-transform: uppercase; color: var(--laranja); }
 .visite p { margin: 0 0 10px; }
 .visite .end { font-size: 1.1rem; font-weight: 500; }
 .botoes { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
@@ -128,13 +128,13 @@ a { color: inherit; }
   padding: 12px 18px; font-weight: 600; font-size: .95rem; text-decoration: none; border-radius: 6px;
 }
 .btn-whats { background: var(--whats); color: #fff; }
-.btn-linha { border: 2px solid var(--aco); color: var(--aco); }
+.btn-linha { border: 2px solid var(--laranja); color: var(--laranja); }
 .mapa { width: 100%; height: 100%; min-height: 300px; border: 0; }
 
 /* ---------- Rodapé ---------- */
-.rodape { background: var(--aco); color: #c8cdd2; text-align: center; padding: 28px 20px 90px; font-size: .9rem; }
+.rodape { background: var(--aco); color: #c8cdd2; text-align: center; padding: 28px 20px 90px; font-size: .9rem; border-top: 6px solid var(--laranja); }
 .rodape p { margin: 0 0 6px; }
-.rodape strong { color: #fff; }
+.rodape strong { color: var(--laranja); }
 .fontes { font-size: .78rem; color: #8b949c; }
 
 .whats-flutuante {
@@ -150,7 +150,7 @@ a { color: inherit; }
   .capa { padding: 52px 16px 48px; }
   .artigo { padding: 40px 16px 24px; }
   .artigo p { font-size: 1.06rem; }
-  .linha-tempo { grid-template-columns: 1fr; gap: 0; border-top: 0; border-left: 2px solid var(--linha); padding: 0 0 0 22px; }
+  .linha-tempo { grid-template-columns: 1fr; gap: 0; border-top: 0; border-left: 3px solid var(--laranja); padding: 0 0 0 22px; }
   .linha-tempo li { padding: 0 0 18px; }
   .linha-tempo li::before { top: 2px; left: -31px; }
   .visite { grid-template-columns: 1fr; padding: 0 16px; }
