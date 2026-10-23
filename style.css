@@ -72,14 +72,13 @@ a { color: inherit; }
 /* ---------- Botões ---------- */
 .botoes { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
 .btn {
-  display: inline-flex; align-items: center; justify-content: center;
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   padding: 12px 18px; font-weight: 600; font-size: .95rem; text-decoration: none; border-radius: 6px;
 }
 .btn-whats { background: var(--whats); color: #fff; }
 .btn-escuro { background: var(--aco); color: #fff; }
-.btn-claro { background: #fff; color: var(--aco); }
 .btn-linha { border: 2px solid var(--laranja); color: #fff; }
-.btn-insta { gap: 8px; }
+.btn-insta { background: linear-gradient(45deg, #d62976, #962fbf 55%, #4f5bd5); color: #fff; } /* cores do Instagram */
 .rodape a { color: #fff; }
 
 /* ---------- Fotos ---------- */
