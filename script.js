@@ -1,5 +1,5 @@
 // CONFIGURAÇÃO
-const WHATSAPP = "5567999130577"; // 55 + DDD + número (tirado do cadastro público — CONFIRMAR com a loja)
+const WHATSAPP = "5567998578452"; // 55 + DDD + número (passado pelo Giovani, 22/10/2026)
 const MENSAGEM = "Oi! Vi o site da Casa dos Parafusos e queria tirar uma dúvida.";
 const INSTAGRAM = "casadosparafusos11"; // usuário sem @ (vazio = botão e link do Instagram somem)
 
